@@ -1,0 +1,27 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android' // If you use Kotlin, else remove this line for Java
+}
+
+android {
+    namespace 'com.example.paytring'  // your plugin package name
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 24
+        targetSdk 33
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'  // Remove this block if you don't use Kotlin
+    }
+}
+
+dependencies {
+    // If you have dependencies, add them here
+}
